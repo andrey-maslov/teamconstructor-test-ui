@@ -1,0 +1,49 @@
+.buttons {
+  position: relative;
+  display: flex;
+  max-width: 350px;
+
+  button {
+    width: 50%;
+    &:first-child {
+      margin-right: .7rem;
+    }
+  }
+}
+
+.addButtons {
+  button {
+    &:first-child {
+      margin-right: .7rem;
+    }
+  }
+}
+
+.more {
+  width: 2rem ;
+  max-width: 2rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+  transition: .2s;
+  margin-left: 1rem;
+  //margin-right: 0;
+  background-color: rgba(grey, .2);
+
+  &:hover {
+    background-color: rgba(grey, .5);
+  }
+
+  svg {
+    position: relative;
+    bottom: -2px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .buttons {
+    margin-top: 2rem;
+    max-width: unset;
+  }
+}

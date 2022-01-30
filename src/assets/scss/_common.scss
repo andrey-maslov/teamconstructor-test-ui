@@ -1,0 +1,616 @@
+@import 'vars';
+@import 'animations';
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: $font;
+  font-size: 1rem;
+  overflow-x: hidden;
+  //background-color: $grey-bg;
+
+  * {
+    //border: 1px solid red;
+    //outline: none;
+
+    &:focus {
+      outline: solid 3px rgba($accent, .5);
+      outline-offset: -1px;
+      border-radius: $border-radius-sm;
+    }
+  }
+}
+
+.menu-opened {
+  height: 100vh;
+  overflow: hidden;
+}
+
+//focus visible polyfill
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== COMMON LAYOUT =====*/
+
+.pt {
+  &-sm {
+    padding-top: 2rem;
+  }
+  &-md {
+    padding-top: 4rem;
+  }
+  &-lg {
+    padding-top: 6rem;
+  }
+}
+.pb {
+  &-sm {
+    padding-bottom: 2rem;
+  }
+  &-md {
+    padding-bottom: 4rem;
+  }
+  &-lg {
+    padding-bottom: 6rem;
+  }
+}
+
+
+
+.app-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .main {
+    position: relative;
+    flex: 1 0 auto;
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+.flex-centered {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &-estimation {
+
+    .section {
+      min-height: 50vh;
+      padding-bottom: 0;
+    }
+  }
+
+  &-content {
+
+    p {
+      word-break: break-word;
+    }
+  }
+
+  main {
+    flex: 1 0 auto;
+    min-height: auto;
+  }
+
+  &-test-main,
+  &-test-questions,
+  &-test-result {
+    background-color: rgba($accent, .1);
+  }
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+
+  &-page {
+    padding: 60px 0;
+    min-height: calc(100vh - 354px);
+  }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.fade-in {
+  animation: fadeIn ease .5s;
+}
+
+.divider {
+  border-top: 1px solid $grey-bg;
+}
+
+table {
+  th, td {
+    border: 1px solid hsla(0,0%,49%,.3);
+  }
+}
+
+
+/*===== COLORS =====*/
+
+.color {
+
+  &-accent {
+    color: $accent;
+  }
+
+  &-grey {
+    color: $grey;
+  }
+
+  &-red {
+    color: $red;
+  }
+}
+
+.bg {
+
+  &-accent {
+    background-color: $accent;
+  }
+
+  &-grey {
+    background-color: $grey-bg;
+  }
+
+  &-accent-gradient {
+    background: linear-gradient(90deg, $accent-hover, $accent);
+  }
+}
+
+//brands backgrounds
+.bg {
+
+  &-google {
+    background-color: $google;
+  }
+
+  &-facebook {
+    background-color: $facebook;
+  }
+
+  &-linkedin {
+    background-color: $linkedin;
+  }
+
+  &-telegram {
+    background-color: $telegram;
+  }
+
+  &-twitter {
+    background-color: $twitter;
+  }
+
+  &-vk {
+    background-color: $vk;
+  }
+}
+
+
+/*===== HEADER =====*/
+
+.user-popover,
+.lang-popover {
+  right: 0;
+  //top: 10px;
+}
+
+/*===== MOBI MENU =====*/
+.mobile-nav-wrapper {
+
+  .lang-popover {
+    right: 0;
+    top: -140%;
+  }
+
+}
+
+/*===== LANDING =====*/
+
+.landing {
+  font-size: 16px;
+
+  p {
+    font-size: 17px;
+  }
+
+  .section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &-headline {
+      margin-bottom: 6rem;
+    }
+
+    &-title {
+      margin-bottom: 2rem;
+    }
+
+    &-desc {
+      font-size: 1.3rem;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $default-font;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/*===== TOASTS =====*/
+
+.react-toast-notifications__container {
+
+  .react-toast-notifications {
+
+    &__toast {
+      background-color: #fff;
+      color: $text;
+
+      &--error {
+
+        .react-toast-notifications__toast__icon-wrapper {
+          background-color: $danger
+        }
+      }
+      &--success {
+
+        .react-toast-notifications__toast__icon-wrapper {
+          background-color: $success
+        }
+      }
+    }
+
+    &__content {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+
+
+/*===== Modals =====*/
+
+.auth {
+
+  &-modal {
+
+    &-content {
+
+      .tooltip {
+        display: block;
+        line-height: inherit;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.app-wrapper .mobile-auth {
+  background-color: transparent;
+  height: 30px;
+  border: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 19px;
+  text-align: right;
+  width: 80px;
+
+  & > span {
+    margin: 0;
+  }
+
+  &:hover, &:active, &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  svg {
+    margin-bottom: 0;
+  }
+}
+
+
+/*===== SHARE =====*/
+
+.share-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.result-share {
+
+  .share-wrapper {
+    align-items: center;
+  }
+
+  .btn-share {
+    width: 40%;
+    background-color: transparent;
+    color: $accent;
+    border: 1px solid $accent;
+    margin: 0 0 .8rem;
+
+    &:hover {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+}
+
+/*===== FORMS =====*/
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: .4rem .8rem;
+  background-color: #fff;
+  //caret-color: $text-light;
+  //color: $text-light;
+  font-family: $title-font;
+  border: 1px solid rgba($grey, .3);
+  border-radius: $border-radius-sm;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+
+  label {
+
+    span {
+      display: inline-block;
+      margin-bottom: .2rem;
+    }
+  }
+
+  textarea {
+    resize: none;
+    margin: 0;
+    height: 100px;
+  }
+
+  .item-explain {
+    font-size: .8rem;
+    min-height: 1.5rem;
+    padding-top: 0;
+    line-height: 1.4;
+    transition: color .3s cubic-bezier(.215, .61, .355, 1);
+
+    &.api {
+
+      &-error {
+        color: $danger;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+      &-success {
+        color: $success;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+    }
+  }
+
+  &.has-error {
+    margin-bottom: 0;
+
+    .item-explain {
+      color: $danger;
+
+      &.floating {
+        position: absolute;
+        padding: .8rem;
+        right: 0;
+        bottom: -120%;
+        background-color: #fff;
+        border-radius: $border-radius-sm;
+        box-shadow: $box-shadow-lg;
+        width: 100%;
+        z-index: 99;
+      }
+    }
+
+    input,
+    textarea {
+
+      &:focus {
+        border-radius: 3px;
+        outline-color: rgba($danger, .5);
+      }
+    }
+  }
+
+  button {
+    margin-bottom: 0;
+    padding: .5rem .8rem;
+  }
+}
+
+.success {
+  color: $success;
+}
+
+.danger {
+  color: $danger;
+}
+
+.warning {
+  color: $warning;
+}
+
+.auth-icon-success {
+  color: $success;
+  font-size: 3rem;
+}
+
+
+/*===== Cities images =====*/
+
+.city {
+  background: url('../img/cities/cities-sprite.jpg') no-repeat top left;
+  width: 120px;
+  height: 120px;
+  border-radius: 3px;
+
+  &.brussels {
+    background-position: 0 0;
+  }
+
+  &.lisbon {
+    background-position: 0 -121px;
+  }
+
+  &.warsaw {
+    background-position: 0 -242px;
+  }
+
+  &.copenhagen {
+    background-position: 0 -363px;
+  }
+
+  &.barcelona {
+    background-position: 0 -484px;
+  }
+
+  &.dublin {
+    background-position: 0 -605px;
+  }
+
+  &.stockholm {
+    background-position: 0 -726px;
+  }
+
+  &.krakow {
+    background-position: 0 -847px;
+  }
+
+  &.prague {
+    background-position: 0 -968px;
+  }
+
+  &.wroclaw {
+    background-position: 0 -1089px;
+  }
+
+  &.paris {
+    background-position: 0 -1210px;
+  }
+
+  &.zurich {
+    background-position: 0 -1331px;
+  }
+
+  &.gdansk {
+    background-position: 0 -1452px;
+  }
+
+  &.london {
+    background-position: 0 -1573px;
+  }
+
+  &.munich {
+    background-position: 0 -1694px;
+  }
+
+  &.berlin {
+    background-position: 0 -1815px;
+  }
+
+  &.sofia {
+    background-position: 0 -1936px;
+  }
+
+  &.helsinki {
+    background-position: 0 -2057px;
+  }
+
+  &.moscow {
+    background-position: 0 -2178px;
+  }
+
+  &.madrid {
+    background-position: 0 -2299px;
+  }
+
+  &.amsterdam {
+    background-position: 0 -2420px;
+  }
+
+  &.kyiv {
+    background-position: 0 -2541px;
+  }
+
+  &.minsk {
+    background-position: 0 -2662px;
+  }
+
+  &.oslo {
+    background-position: 0 -2783px;
+  }
+}
+
+
+.fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  z-index: 14;
+}

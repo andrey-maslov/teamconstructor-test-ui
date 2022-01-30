@@ -1,0 +1,29 @@
+@import '../../../../assets/scss/vars';
+
+.logo {
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: $text;
+    line-height: 1;
+
+    &:hover {
+      color: $accent
+    }
+  }
+
+  img {
+    height: 30px;
+    margin-right: .5rem;
+  }
+}
+
+@media(max-width: 992px) {
+
+  .logo {
+
+  }
+}

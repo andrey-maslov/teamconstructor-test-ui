@@ -1,0 +1,107 @@
+@import '../../../../assets/scss/vars';
+
+.wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1rem;
+  overflow: hidden;
+
+  th {
+    background-color: $grey-bg;
+  }
+
+  th, td {
+    padding: .7rem;
+    //border: 1px solid rgba($grey, .3);
+    line-height: 1.4;
+  }
+
+  tr {
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: darken($grey-bg, 5%);
+    }
+
+    td {
+      &:first-of-type {
+        &:first-letter {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.striped {
+
+  td {
+
+    &:last-child {
+      //border-left: 1px solid $grey-bg
+    }
+  }
+
+  tr {
+
+    &:nth-child(odd) {
+      background-color: $grey-bg;
+
+      td {
+
+        &:last-child {
+          //border-left: 1px solid #fff
+        }
+      }
+    }
+  }
+}
+
+.small {
+
+  tr {
+
+    td {
+
+      &:last-of-type {
+        width: 3.5rem;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.large {
+
+  tr {
+
+    td {
+      vertical-align: top;
+
+      &:first-of-type {
+        min-width: 14rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .large {
+
+    tr {
+
+      td {
+
+        &:first-of-type {
+          min-width: unset;
+        }
+      }
+    }
+  }
+}

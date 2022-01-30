@@ -1,0 +1,65 @@
+@import '../../../../assets/scss/vars';
+
+.btn {
+
+  button {
+    background-color: transparent;
+    border: 0;
+    border-radius: $border-radius-sm;
+    transition: all .2s;
+    color: currentColor;
+    font-size: 1.25rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(#fff, .3);
+    }
+
+    svg {
+      position: relative;
+      bottom: -2px;
+    }
+  }
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: $box-shadow-lg;
+  border-radius: $border-radius-lg;
+  transition: opacity .3s ease;
+  width: 300px;
+  max-width: 300px;
+  z-index: 9;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.item {
+  display: flex;
+  margin-bottom: .8rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+
+  }
+
+  svg {
+    position: relative;
+    bottom: -4px;
+    color: $grey;
+    margin-right: 1rem;
+  }
+}
+
+
+@media(max-width: 600px) {
+
+
+}

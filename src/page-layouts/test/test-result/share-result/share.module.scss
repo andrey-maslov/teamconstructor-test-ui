@@ -1,0 +1,74 @@
+@import '../../../../assets/scss/vars';
+
+.code {
+  margin-bottom: 1.5rem;
+}
+
+.desc {
+  margin-bottom: 1rem;
+}
+
+.team {
+  background-color: $teamconstructor;
+  border-radius: $border-radius-md;
+  padding: 1rem 1.5rem;
+  color: $teamconstructor-text;
+  text-align: center;
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  img {
+    width: 109px;
+    height: 34px;
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      color: $teamconstructor-text;
+      border-color: $teamconstructor-text;
+
+      &:hover {
+        background-color: lighten($teamconstructor, 5%);
+      }
+
+      svg {
+        position: relative;
+        bottom: -1px;
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
+.bottom {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-size: .8rem;
+  border-top: 1px solid $grey-bg;
+}
+
+@media (max-width: 992px) {
+
+  .team {
+    margin-bottom: 2rem;
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    & > div {
+      flex-wrap: wrap;
+
+      a {
+        width: 100%;
+      }
+    }
+  }
+}

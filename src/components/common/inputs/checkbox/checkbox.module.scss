@@ -1,0 +1,149 @@
+@import '../../../../assets/scss/vars';
+
+$color__primary: $accent;
+
+$checkbox__size: 20px;
+$switch__size: $checkbox__size;
+
+$checkbox__border__size: 2px;
+
+$checkbox__checkmark__size: $checkbox__size - (2*$checkbox__border__size);
+$checkbox__checkmark__size--indeterminate: 2px;
+$checkbox__checkmark__color: $color__primary;
+$checkbox__checkmark__color--disabled: $grey-bg;
+
+
+// CHECKBOXES
+
+.label {
+  //flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  //user-select: none;
+}
+
+.text {
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.input {
+  position: relative;
+  flex-shrink: 0;
+  margin-right: ($checkbox__size / 2);
+  width: $checkbox__size;
+  height: $checkbox__size;
+  border-radius: 3px;
+  padding: 0;
+  appearance: none;
+  outline: none; // TODO: manage :focus
+  background: transparent;
+  cursor: pointer;
+  border: $checkbox__border__size solid rgba($accent, .5);
+
+  &:focus {
+    border-color: $accent;
+  }
+
+  &:checked,
+  &:indeterminate {
+    &::before {
+      top: $checkbox__border__size;
+      right: $checkbox__border__size;
+      bottom: $checkbox__border__size;
+      left: $checkbox__border__size;
+    }
+  }
+  &:checked {
+    border-color: $accent;
+
+    &:before,
+    &:after {
+      content: ' ';
+      position: absolute;
+      background: $checkbox__checkmark__color;
+      transition: all .1s;
+      border-radius: 2px;
+    }
+
+    &::before {
+      height: 11px;
+      width: 3px;
+      left: 8px;
+      top: 2px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      height: 3px;
+      left: 3px;
+      top: 8px;
+      transform: rotate(45deg);
+      width: 6px;
+    }
+  }
+
+  &:indeterminate {
+    &::before {
+      top: ($checkbox__checkmark__size / 2) - ($checkbox__checkmark__size--indeterminate / 2);
+      bottom: ($checkbox__checkmark__size / 2) - ($checkbox__checkmark__size--indeterminate / 2);
+    }
+  }
+
+  &:disabled {
+    border-color: $grey-bg;
+    cursor: default;
+
+    &::before {
+      background-color: $checkbox__checkmark__color--disabled;
+    }
+
+    + .label { //TODO fix
+      color: $grey;
+      cursor: default;
+    }
+  }
+}
+
+
+.hasErrorInput {
+  border-color: red;
+  background-color: rgba(red, .2);
+
+  &::before {
+    background-color: red;
+  }
+}
+
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.switchInput {
+  width: (2 * $switch__size) - (2 * $checkbox__border__size);
+  height: $switch__size;
+  border: $checkbox__border__size solid rgba($accent, .5);
+  border-radius: $checkbox__checkmark__size;
+
+  &::before {
+    top: $checkbox__border__size;
+    right: $switch__size - $checkbox__border__size;
+    bottom: $checkbox__border__size;
+    left: $checkbox__border__size;
+    border-radius: 50%;
+    background: rgba($accent, .5);
+  }
+
+  &:checked {
+    border-color: rgba($accent, 1);
+
+    &::before {
+      right: $checkbox__border__size;
+      left: $switch__size - $checkbox__border__size;
+      background: $accent;
+    }
+  }
+}
+

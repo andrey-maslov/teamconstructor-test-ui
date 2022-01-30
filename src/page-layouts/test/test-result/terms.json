@@ -1,0 +1,179 @@
+{
+  "ru": {
+    "subAxes": [
+      [
+        "активность - пассивность",
+        "возбуждение - торможение",
+        "общительность - замкнутость",
+        "поиск впечатлений - избегание впечатлений",
+        "привлечение внимания  -  избегание внимания"
+      ],
+      [
+        "самообвинение - самодовольство",
+        "сотрудничество - соперничество",
+        "социализация - индивидуализм",
+        "подчиненность - доминирование",
+        "тревожность - уверенность"
+      ],
+      [
+        "аккуратность - неаккуратность",
+        "настойчивость - спонтаннось",
+        "склонность к раздумьям - опора на интуицию",
+        "самоконтроль - импульсивность",
+        "предусмотрительность - беспечность"
+      ],
+      [
+        "избегание ответственности - ответственность",
+        "принятие контроля - непринятие контроля",
+        "невротизм - стабильность",
+        "осторожность - склонность к принятию отношений",
+        "склонность к установлению отношений - осторожность в установлении отношений"
+      ],
+      [
+        "любопытство - консерватизм",
+        "мечтательность - реалистичность",
+        "артистичность - приземленность",
+        "эмоциональная гибкость - эмоциональная стабильность",
+        "пластичность - ригидность"
+      ]
+    ],
+    "psychoTypes": [
+      "индивидуалист",
+      "инноватор",
+      "лидер мнений",
+      "модник",
+      "консерватор",
+      "чувствительный",
+      "замкнутый",
+      "реалист"
+    ],
+    "tendencies": [
+      "тревожность",
+      "лабильность",
+      "экстраверсия",
+      "спонтанность",
+      "агрессивность",
+      "ригидность",
+      "интроверсия",
+      "сензитивность"
+    ]
+  },
+  "en": {
+    "subAxes": [
+      [
+        "activity - passivity",
+        "excitement - inhibition",
+        "sociability - isolation",
+        "search for impressions - avoidance of impressions",
+        "attracting attention - avoiding attention"
+      ],
+      [
+        "self-blame - complacency",
+        "cooperation - rivalry",
+        "socialization - individualism",
+        "subordination - domination",
+        "anxiety - confidence"
+      ],
+      [
+        "neatness - sloppiness",
+        "persistence - spontaneity",
+        "a tendency to think everything over - reliance on intuition",
+        "self-control - impulsivity",
+        "foresight - carelessness"
+      ],
+      [
+        "avoidance of responsibility - responsibility",
+        "taking control - not taking control",
+        "neuroticism - stability",
+        "caution - a tendency to accept relationships",
+        "a tendency to establish relationships - caution in establishing relationships"
+      ],
+      [
+        "curiosity - conservatism",
+        "dreaminess - realism",
+        "artistry - earthiness",
+        "emotional flexibility - emotional stability",
+        "plasticity - rigidity"
+      ]
+    ],
+    "psychoTypes": [
+      "individualist",
+      "innovator",
+      "influencer",
+      "fashionista",
+      "conservative",
+      "sensitive",
+      "reserved",
+      "realist"
+    ],
+    "tendencies": [
+      "anxiety",
+      "lability",
+      "extraversion",
+      "spontaneity",
+      "aggressiveness",
+      "rigidity",
+      "introversion",
+      "sensitivity"
+    ]
+  },
+  "pl": {
+    "subAxes": [
+      [
+        "activity - passivity",
+        "excitement - inhibition",
+        "sociability - isolation",
+        "search for impressions - avoidance of impressions",
+        "attracting attention - avoiding attention"
+      ],
+      [
+        "self-blame - complacency",
+        "cooperation - rivalry",
+        "socialization - individualism",
+        "subordination - domination",
+        "anxiety - confidence"
+      ],
+      [
+        "neatness - sloppiness",
+        "persistence - spontaneity",
+        "a tendency to think everything over - reliance on intuition",
+        "self-control - impulsivity",
+        "foresight - carelessness"
+      ],
+      [
+        "avoidance of responsibility - responsibility",
+        "taking control - not taking control",
+        "neuroticism - stability",
+        "caution - a tendency to accept relationships",
+        "a tendency to establish relationships - caution in establishing relationships"
+      ],
+      [
+        "curiosity - conservatism",
+        "dreaminess - realism",
+        "artistry - earthiness",
+        "emotional flexibility - emotional stability",
+        "plasticity - rigidity"
+      ]
+    ],
+    "psychoTypes": [
+      "individualist",
+      "innovator",
+      "influencer",
+      "fashionista",
+      "conservative",
+      "sensitive",
+      "reserved",
+      "realist"
+    ],
+    "tendencies": [
+      "anxiety",
+      "lability",
+      "extraversion",
+      "spontaneity",
+      "aggressiveness",
+      "rigidity",
+      "introversion",
+      "sensitivity"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+@import '../../../assets/scss/vars';
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  svg {
+    min-width: 4rem;
+    width: 4rem;
+    padding: 0;
+    line-height: 1;
+    margin: 0 2rem;
+    height: auto;
+    font-size: 8rem;
+
+    path {
+      stroke: $accent;
+    }
+  }
+
+  div {
+    border-left: 1px solid $accent;
+    padding-left: 1.5rem;
+
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.name {
+  margin-bottom: 20px;
+
+  input {
+    display: inline-block;
+    max-width: 340px;
+    margin-bottom: 10px;
+  }
+
+  &.error {
+
+    input {
+      border-color: rgba($danger, .5);
+    }
+  }
+}
+
+.nameError {
+  color: $danger;
+  font-size: 12px;
+}
+
+@media(max-width: 600px) {
+
+  .info {
+    margin-bottom: 1rem;
+
+    svg {
+      min-width: 2rem;
+      width: 2rem;
+      margin: 0 1rem 0 0;
+      font-size: 7rem;
+    }
+
+    div {
+      padding-left: 1rem;
+    }
+  }
+}

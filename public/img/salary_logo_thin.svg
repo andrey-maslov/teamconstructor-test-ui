@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2397.758" height="563" viewBox="0 0 2397.758 563">
+  <g id="salary_logo_thin" transform="translate(-119.242 -1227)">
+    <g id="icon" transform="translate(-2149 703)">
+      <g id="Сгруппировать_10" data-name="Сгруппировать 10" transform="translate(2268.242 544)">
+        <path id="Прямоугольник_14" data-name="Прямоугольник 14" d="M0,0H315.751a0,0,0,0,1,0,0V181.881a0,0,0,0,1,0,0H30a30,30,0,0,1-30-30V0A0,0,0,0,1,0,0Z" transform="translate(181.881 0) rotate(90)" fill="#36a9e0"/>
+        <path id="Прямоугольник_16" data-name="Прямоугольник 16" d="M0,0H285.751a30,30,0,0,1,30,30V180.192a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(520 204.249) rotate(90)" fill="#8ccff0"/>
+        <path id="Прямоугольник_15" data-name="Прямоугольник 15" d="M0,0H489.994a30,30,0,0,1,30,30V96.638a30,30,0,0,1-30,30H30a30,30,0,0,1-30-30V0A0,0,0,0,1,0,0Z" transform="translate(0 393.362)" fill="#8ccff0"/>
+        <path id="Прямоугольник_17" data-name="Прямоугольник 17" d="M30,0H489.994a30,30,0,0,1,30,30v96.638a0,0,0,0,1,0,0H8a8,8,0,0,1-8-8V30A30,30,0,0,1,30,0Z" transform="translate(0 0)" fill="#36a9e0"/>
+      </g>
+    </g>
+    <g id="salary-logo-max" transform="translate(-100)">
+      <text id="Salary2me" transform="translate(818 1670)" fill="#203152" font-size="435" font-family="PTSans-Regular, PT Sans" letter-spacing="-0.044em"><tspan x="0" y="0">Salary2me</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+@import 'src/assets/scss/vars';
+
+.wrapper {
+  display: flex;
+  //margin-bottom: 80px;
+  //justify-content: space-between;
+
+  .chart {
+    width: 500px;
+    min-height: 340px;
+    margin: 0 auto;
+  }
+}
+
+.table {
+  width: 20rem;
+  margin-right: 50px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+
+  label {
+    color: rgba($text, .7);
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 992px) {
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .table {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+}

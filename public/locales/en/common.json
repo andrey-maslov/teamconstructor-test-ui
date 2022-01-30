@@ -1,0 +1,65 @@
+{
+  "buttons": {
+    "add": "Add",
+    "agree": "Agree",
+    "next": "Next",
+    "registration": "Registration",
+    "return": "Return",
+    "save": "Save",
+    "search": "Search",
+    "send": "Send",
+    "signin": "Login",
+    "signout": "Logout",
+    "signup": "Registration",
+    "start_test": "Start test",
+    "to_main": "To main",
+    "account": "Account settings"
+  },
+  "cookie_consent": {
+    "text": "We care about you, so you have to agree to our cookie policy",
+    "title": "Cookie policy"
+  },
+  "errorPage": {
+    "description": "<p> You have come to a page that does not exist. </p> <p> This may be due to a typo. </p>",
+    "not_found": "Page not found",
+    "oops": "Ooooops...",
+    "title": "Error 404",
+    "meta": {
+      "description": "Error page description",
+      "title": "Page not found"
+    }
+  },
+  "errors": {
+    "invalid": "Invalid value",
+    "invalid_email": "invalid email",
+    "need_to_authorize": "Sign in, please",
+    "required": "This field is required",
+    "invalid_salary": "The field must contain only numbers"
+  },
+  "misc": {
+    "subscribe_msg": "I would like to receive newsletters of new vacancies",
+    "psychological_test": "Psychological test"
+  },
+  "nav": {
+    "cookie": "Cookie policy",
+    "cv": "My CV",
+    "estimation": "CV estimation",
+    "office": "Office",
+    "privacy_policy": "Privacy policy",
+    "terms": "Terms and conditions",
+    "test": "Test",
+    "home": "Home"
+  },
+  "footer": {
+    "sharing_text": "Help project by sharing",
+    "info": "Information",
+    "contacts": "Contacts",
+    "author_text": "Developed by:",
+    "address": "Belarus, Minsk",
+    "copy": "LLC Center of Technology Investments"
+  },
+  "meta": {
+    "title": "Инструмент для оценки рыночной стоимости резюме",
+    "description": "Загрузите своё резюме и узнайте свою рыночную зарплату в странах Европы! Бесплатный инструмент аналитики вашего CV"
+  }
+}

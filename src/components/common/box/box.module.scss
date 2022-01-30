@@ -1,0 +1,25 @@
+@import '../../../assets/scss/vars';
+
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 0 1rem;
+  padding: 1.5rem;
+  color: currentColor;
+  position: relative;
+  background: #fff;
+  border-radius: $border-radius-sm;
+  box-shadow: $box-shadow-sm;
+  transition: all .3s;
+}
+
+
+@media(max-width: 992px) {
+
+  .wrapper {
+    padding: 2rem 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 0;
+  }
+
+}

@@ -1,0 +1,47 @@
+@import '../../../../assets/scss/vars';
+
+$base-size: 30px;
+
+.btn {
+  background-color: $accent;
+  color: #fff;
+  border-radius: 3px;
+  border: 0;
+  width: auto;
+  height: $base-size;
+  line-height: $base-size - 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s ease-in-out;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 2px .5rem;
+  outline: none !important;
+
+  span {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  &:focus {
+    //outline: 1px solid rgba($orange, .2) !important;
+  }
+
+  svg {
+    transition: all .3s ease-in-out;
+  }
+
+
+  &:hover {
+    background-color: $accent-hover;
+  }
+
+  &.opened {
+
+    svg {
+      transform: scaleY(-1);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../../../assets/scss/vars';
+
+.wrapper {
+  canvas {
+    margin: 0 auto;
+    max-width: 550px;
+    max-height: 420px;
+  }
+}
+
+@media(max-width: 992px) {
+
+
+}

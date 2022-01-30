@@ -1,0 +1,25 @@
+@import '../../../../assets/scss/vars';
+
+.wrapper {
+  //border: 1px solid $accent;
+  border-radius: $border-radius-sm;
+  padding: 1.5rem;
+}
+
+.desc {
+}
+
+.person {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 250px;
+  margin: 0 auto 1.5rem;
+  opacity: .8;
+}

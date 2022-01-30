@@ -1,0 +1,44 @@
+@import '../../../assets/scss/vars';
+
+.header {
+  position: relative;
+  box-shadow: $box-shadow-md;
+  background-color: #fff;
+  z-index: 99;
+  padding: 10px 100px;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 992px) {
+
+  .header {
+    border-bottom: 1px solid rgba($grey, .2);
+    padding: 10px 1rem;
+  }
+
+  .bar {
+    //height: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    //& > div {
+    //
+    //  &:first-child {
+    //    order: 1
+    //  }
+    //
+    //  &:last-child {
+    //    order: 3
+    //  }
+    //}
+    //
+    //& > button {
+    //  order: 0;
+    //}
+  }
+}

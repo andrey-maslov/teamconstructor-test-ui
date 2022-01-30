@@ -1,0 +1,94 @@
+@import "vars";
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+only screen and (min-resolution: 192dpi) {
+  .city {
+    background: url('../img/cities/cities-sprite@2x.jpg') no-repeat top left;
+    background-size: 120px 2904px;
+  }
+}
+
+
+@media (max-width: $lg-breakpoint) {
+
+  .pt {
+    &-sm {
+      padding-top: 1rem;
+    }
+    &-md {
+      padding-top: 1.5rem;
+    }
+    &-lg {
+      padding-top: 2rem;
+    }
+  }
+  .pb {
+    &-sm {
+      padding-bottom: 1rem;
+    }
+    &-md {
+      padding-bottom: 1.5rem;
+    }
+    &-lg {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .page {
+    &-results {
+      main {
+        padding: 20px 0;
+      }
+    }
+
+    main {
+      flex: 1 0 auto;
+      min-height: auto;
+    }
+  }
+
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .content-page {
+    padding: 20px 0;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .result-share {
+
+    .share-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-share {
+      width: 100%;
+    }
+  }
+
+  .landing {
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .section {
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+
+      &-headline {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+}

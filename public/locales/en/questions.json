@@ -1,0 +1,334 @@
+{
+  "personalInfo": [
+    {
+      "title": "Status",
+      "values": [
+        "Single / Not married",
+        "Married",
+        "Divorced",
+        "I prefer not to answer"
+      ]
+    },
+    {
+      "title": "Age",
+      "values": [
+        "18-24",
+        "25-34",
+        "35-44",
+        "45-54",
+        "55-64",
+        "65+"
+      ]
+    },
+    {
+      "title": "Sex",
+      "values": [
+        "Male",
+        "Female",
+        "Another"
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "I like to do sport; I regularly go to the gym",
+      "I plan to engage in sports activities but this is happening irregularly yet"
+    ],
+    [
+      "I have many weaknesses and drawbacks",
+      "I have a high self-esteem"
+    ],
+    [
+      "My room is always tidy",
+      "I don’t really try to keep a clean and tidy room"
+    ],
+    [
+      "It’s nice to work alone because you are not responsible for other people",
+      "Working as a manager gives an important sense of responsibility for other people"
+    ],
+    [
+      "I am interested in the new in the fashion world",
+      "Some “fashionable” things irritate me"
+    ],
+    [
+      "It’s hard for me to sit still",
+      "I have a calm temper and prefer no to rush"
+    ],
+    [
+      "In all my failures only I am to blame and not other people and circumstances",
+      "Sometimes circumstances and other people interfere with my plans"
+    ],
+    [
+      "I like that my desk is always neat",
+      "I like organized chaos. Pedantry is not about me"
+    ],
+    [
+      "I am a very good doer, if the manager clearly formulates a problem",
+      "I often take control by myself and strive to decide what will be done and how"
+    ],
+    [
+      "I like surprises",
+      "I like the predictability of events"
+    ],
+    [
+      "I think that I am a person of activity",
+      "I think that a more settled way of life is suitable for me"
+    ],
+    [
+      "Sometimes I feel like I’m a looser",
+      "I almost always win"
+    ],
+    [
+      "I come to the meeting on time or a bit early, it is very important",
+      "Sometimes I’m late for meetings. In a big city with traffic jams, this is a common thing"
+    ],
+    [
+      "While moving towards the goal, a person may encounter many obstacles. More experienced people can help avoid mistakes",
+      "If I am confident in the chosen goal, it’s very difficult to influence my actions"
+    ],
+    [
+      "I lose interest when the answer is clear ahead of time",
+      "I prefer the familiar and the proven"
+    ],
+    [
+      "I like doing several things at a time",
+      "If I have several tasks planned, I do them sequentially: first one, then another"
+    ],
+    [
+      "A rupture is not preferable to a patchwork peace",
+      "Thought thrives on conflict"
+    ],
+    [
+      "I like difficult tasks that require perseverance and eagerness",
+      "I choose to deal with the matters that do not require a lot of time first, and then everything else"
+    ],
+    [
+      "I’m OK with someone controlling my work at different stages",
+      "I’m not comfortable with the idea of someone checking my work until it's finished"
+    ],
+    [
+      "For me, it’s natural to fantasize and dream about something",
+      "I prefer to come down to earth"
+    ],
+    [
+      "I prefer to walk fast in museums, because I can view many paintings",
+      "In the museum, I prefer to walk slowly carefully examining the most interesting things"
+    ],
+    [
+      "People should help each other",
+      "Everyone should be able to take care of themselves"
+    ],
+    [
+      "I was a diligent student at school",
+      "At school, it was hard for me to sit still"
+    ],
+    [
+      "It is much easier to correct mistakes during the work than after the task is finished",
+      "It’s much easier to accomplish a task and then fix the flaws"
+    ],
+    [
+      "I prefer to read adventure novels, mystery novels, science fiction; everything happening there is unpredictable",
+      "I am fascinated by scientific literature and classics; everything is realistic there"
+    ],
+    [
+      "I withstand loneliness with no challenge, but communicating with people is what gives energy",
+      "I feel OK in a big company, but I rest alone or with the loved ones"
+    ],
+    [
+      "There is always an opportunity to negotiate and meet halfway",
+      "Both parties are unhappy with trade-offs. To achieve the goal, one party will have to give in"
+    ],
+    [
+      "I believe that success is achieved through hard work and persistence",
+      "I think that success comes to those who are lucky and talented"
+    ],
+    [
+      "My loved ones can call me several times a day",
+      "I do not like frequent phone calls from my loved ones"
+    ],
+    [
+      "I spend part of my time deep in thought",
+      "I do not like to spend a lot of time thinking, I am a person of action"
+    ],
+    [
+      "I easily get acquainted with new people",
+      "It’s easier for me when a stranger is introduced by one of my friends or colleagues"
+    ],
+    [
+      "I like the people around me, and I am pleased to be part of the team",
+      "The goal of each person is his/her personal happiness and the happiness his/her loved ones. If you want to make people happy, make yourself happy first"
+    ],
+    [
+      "It’s important to plan your future",
+      "Life can and should be unpredictable"
+    ],
+    [
+      "I often experience loneliness, sadness and unwillingness to do anything",
+      "I'm optimistic and never depressed"
+    ],
+    [
+      "I know well what beauty and elegance are",
+      "My concept of beauty is pretty much the same as that of others"
+    ],
+    [
+      "I think it's great to expand your circle of acquaintances and friends",
+      "I think it’s best to have a few friends for constant communication"
+    ],
+    [
+      "Most people try to be decent",
+      "Most people are afraid of punishment, and often only this stops them"
+    ],
+    [
+      "I am very upset by failures",
+      "Do not pay attention to failures on the way towards the goal"
+    ],
+    [
+      "My mood depends on the circumstances",
+      "It's hard to bring me down"
+    ],
+    [
+      "I would take acting classes",
+      "I would take financial literacy courses"
+    ],
+    [
+      "I love being in a big and fun company",
+      "I prefer solitude and silence"
+    ],
+    [
+      "I think it’s natural for people to cooperate",
+      "I think it’s natural for people to compete"
+    ],
+    [
+      "A failure can throw me off my stride for a while. Every failure needs to be well thought over",
+      "People make mistakes, I am no exception. Today you fail, tomorrow you get lucky"
+    ],
+    [
+      "There was a lot of tragedy in my life",
+      "In all situations, I find silver lining"
+    ],
+    [
+      "Works of art delight me",
+      "Not every work of art can impress me"
+    ],
+    [
+      "I like watching extreme sports competitions",
+      "I do not understand why people engage in dangerous sports"
+    ],
+    [
+      "The best managerial approach is to explain in a polite and tactful way what needs to be done",
+      "Often, orders are better understood than explanations and persuasions"
+    ],
+    [
+      "I think over decisions before making them",
+      "I make decisions quickly"
+    ],
+    [
+      "I think life makes some people evil",
+      "Most people are kind by nature"
+    ],
+    [
+      "I react strongly",
+      "It's almost impossible to throw me off balance"
+    ],
+    [
+      "Thrills make you feel alive",
+      "I prefer to avoid dangerous situations"
+    ],
+    [
+      "If I’m appointed manager I will not refuse, but I myself will not burst into management",
+      "I take the role of leader with pleasure and take the initiative"
+    ],
+    [
+      "I control my feelings and desires",
+      "I follow my desires. If I want something, I do it"
+    ],
+    [
+      "There are people whom I do not like",
+      "I usually like the people with whom I communicate"
+    ],
+    [
+      "My mood easily shifts",
+      "I am always calm and cool-headed"
+    ],
+    [
+      "I think that carnivals, holidays and parties bring pleasure",
+      "Pleasure is relaxing in a secluded place"
+    ],
+    [
+      "I respect the opinions of other people and listen to them",
+      "If I know that I’m right, then the opinion of seniors by age or status does not really matter"
+    ],
+    [
+      "I make a shopping list and try not to go beyond it",
+      "I like to spoil myself with unplanned pleasant things"
+    ],
+    [
+      "Sometimes I am suspicious of other people",
+      "Most people are honest and can be trusted"
+    ],
+    [
+      "I can get so uneasy that I can cry",
+      "I never cry, it's hard to set my nerves to edge"
+    ],
+    [
+      "I feel good when they pay attention to me",
+      "I am a humble person and I do not like to draw attention to myself"
+    ],
+    [
+      "It’s easy to hurt my feelings",
+      "I’m comfortable with other people making statements about me"
+    ],
+    [
+      "I am a forethoughtful person; I think over several options",
+      "The life doesn’t evoke anxiety. If a problem arises, I’ll solve it then"
+    ],
+    [
+      "I try to be friendly to all people",
+      "I’m not kind to each and every person"
+    ],
+    [
+      "I like to make people smile and surprise them",
+      "I am always who I am. I'm not trying to make people like me"
+    ],
+    [
+      "I can attract people's attention and do it easily",
+      "I do not attract people's attention, I do not need it"
+    ],
+    [
+      "I worry that something unpleasant can happen in my life",
+      "I’m not at all worried about possible troubles"
+    ],
+    [
+      "I carefully plan my trips",
+      "Unplanned adventures are the most memorable"
+    ],
+    [
+      "I always act tactfully",
+      "I hurt feelings of others sometimes in joke and sometimes intentionally"
+    ],
+    [
+      "I think life is a game",
+      "Life is an experience passed on to future generations"
+    ],
+    [
+      "I like that people pay attention to my appearance",
+      "In public settings, I usually do not stand out with fashionable clothes and behavior"
+    ],
+    [
+      "I like to listen rather than to speak",
+      "In the company of friends, I often find myself in the spotlight"
+    ],
+    [
+      "I think that hard work is the main thing if you what to be successful",
+      "I think that any task is easier to do if you trust your intuition and inspiration"
+    ],
+    [
+      "I always try to be kind and considerate to everyone",
+      "I’m reserved with strangers; I’m kind and considerate only with friends and relatives"
+    ],
+    [
+      "Sometimes I feel like I can discover something new in myself",
+      "People do not change, but only adapt to circumstances"
+    ]
+  ]
+}

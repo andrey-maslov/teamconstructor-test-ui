@@ -1,0 +1,17 @@
+.closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+  padding: 10px 15px 13px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 0;
+  line-height: 1;
+  transition: all .3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(#000, .1);
+  }
+}

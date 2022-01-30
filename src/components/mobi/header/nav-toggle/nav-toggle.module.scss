@@ -1,0 +1,29 @@
+@import '../../../../assets/scss/vars';
+
+.btn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  width: 44px;
+  height: 37px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 24px;
+  line-height: 10px;
+  text-align: right;
+  padding: 0;
+  order: 0;
+
+  &:hover, &:active {
+    outline: none;
+  }
+
+}
+
+
+@media(min-width: 992px) {
+
+  .btn {
+    display: none;
+  }
+}
