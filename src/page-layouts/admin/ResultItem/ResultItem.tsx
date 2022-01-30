@@ -14,8 +14,8 @@ export const ResultItem: React.FC<ResultItemProps> = ({ data,  number }) => {
   
   const time = intervalToDuration({ start: 0, end: parseInt(duration) || 0 })
   const formattedTime = `${time.hours}h:${time.minutes}min:${time.seconds}sec`
-  const formattedDate = format(new Date(createdAt), 'MM/dd/yyyy')
-  const link = `/result?encdata=${testResult}&name=${encodeBase64(fullName)}`
+  const formattedDate = format(new Date(createdAt), 'dd.MM.yyyy / hh:mm a')
+  const link = `/result?encdata=${testResult}&name=${encodeURIComponent(fullName)}`
   
   return (
     <div className={style.item}>

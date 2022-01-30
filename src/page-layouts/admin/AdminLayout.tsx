@@ -47,7 +47,7 @@ function AdminLayout() {
           <div className="container">
             <h2 className="pb-md">Результаты</h2>
             <div className="row">
-              <div className="col-md-7">
+              <div className="col-md-8">
                 <div className={style.tableHeader}>
                   <span className={style.number}>№</span>
                   <span className={style.email}>Email</span>

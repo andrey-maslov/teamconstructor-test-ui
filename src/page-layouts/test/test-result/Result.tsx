@@ -126,7 +126,7 @@ const Result = ({ testResult }) => {
     return (
         <div id="result">
           {userName ? (
-            <h2>{decodeBase64(userName)}</h2>
+            <h2>{decodeURIComponent(JSON.stringify(userName))}</h2>
           ) : (
             <div
               className="between-xs middle-xs"
