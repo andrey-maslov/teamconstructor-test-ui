@@ -3,6 +3,7 @@ import { baseTestResultType, IUserResult } from '../libs/psychology/build/main/t
 import { UserResult } from '../libs/psychology'
 import { CONTENT_API } from '../constants/constants'
 import { AnswerType } from '../typings/types'
+import {string} from "prop-types";
 
 export const stringToBoolean = string => {
     switch (string.toLowerCase().trim()) {
@@ -155,4 +156,9 @@ export const scrollToElement = (elem: string): void => {
     if (targetElem) {
         targetElem.scrollIntoView({ block: 'center', behavior: 'smooth' })
     }
+}
+
+export const validateFullName = (value: string): boolean => {
+  const pattern = /^[a-zA-Zа-яА-я]+(([',. -][a-zA-Zа-яА-я ])?[a-zA-Zа-яА-я]*)*$/
+  return pattern.test(value);
 }

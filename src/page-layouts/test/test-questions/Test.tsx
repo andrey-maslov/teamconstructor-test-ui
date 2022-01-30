@@ -12,7 +12,8 @@ import { TEST_THRESHOLD } from "../../../constants/constants";
 import {
   encodeBase64,
   isTestPassed,
-  scrollToElement
+  scrollToElement, 
+  validateFullName
 } from "../../../helper/helper";
 import {saveTestResult, saveTestResultToFile} from "../../../api/psychologicalTestsAPI";
 
@@ -87,7 +88,8 @@ const Test = () => {
 
   function sendAnswers(fullResult: DecodedDataType) {
     const isPassed = isTestPassed(fullResult[1], TEST_THRESHOLD);
-    if (!teammate) {
+    const isNameValid = validateFullName(teammate)
+    if (!isNameValid) {
       setNameError(true)
       scrollToElement('input[name=teammate]')
       return
