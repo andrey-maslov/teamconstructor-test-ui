@@ -55,14 +55,14 @@ const Questions = ({ changeBlock, questionsSubmit }: QuestionsProps) => {
           title={t("common:buttons.send")}
           endIcon={<FiArrowRight />}
         />
-        {process.env.NODE_ENV !== 'production' && (
-          <Button
-            handle={() => testSubmit(mock.fakeData)}
-            btnClass="btn btn-accent"
-            title="FAKE ANSWERS"
-            endIcon={<FiArrowRight />}
-          />
-        )}
+        {/*{process.env.NODE_ENV !== 'production' && (*/}
+        {/*  <Button*/}
+        {/*    handle={() => testSubmit(mock.fakeData)}*/}
+        {/*    btnClass="btn btn-accent"*/}
+        {/*    title="FAKE ANSWERS"*/}
+        {/*    endIcon={<FiArrowRight />}*/}
+        {/*  />*/}
+        {/*)}*/}
       </div>
     </>
   );

@@ -3,13 +3,9 @@ import '../assets/scss/index.scss';
 import 'focus-visible/dist/focus-visible.js';
 import { ToastProvider } from 'react-toast-notifications';
 // import ScrollToTop from '../components/common/ScrollToTop';
-import { getCookie } from '../helper/cookie';
+// import { getCookie } from '../helper/cookie';
 import { appWithTranslation } from 'next-i18next';
-
-interface AppProps {
-  Component: any;
-  pageProps: any;
-}
+import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -19,11 +15,5 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ToastProvider>
   );
 }
-
-// @ts-ignore
-MyApp.getInitialProps = async (appContext) => {
-  const isConsented = Boolean(getCookie('cookie-consent', appContext.ctx.req));
-  return { ...(await App.getInitialProps(appContext)), isConsented };
-};
 
 export default appWithTranslation(MyApp);
