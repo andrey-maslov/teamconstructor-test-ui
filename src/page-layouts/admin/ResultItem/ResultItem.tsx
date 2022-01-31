@@ -19,12 +19,12 @@ interface ResultItemProps {
 export const ResultItem: React.FC<ResultItemProps> = ({ data, number }) => {
   const router = useRouter();
 
-  const { id, testResult, duration, email, tags, createdAt } = data;
+  const { id, testResult, duration, email, fullName, createdAt } = data;
 
   const time = intervalToDuration({ start: 0, end: parseInt(duration) || 0 });
   const formattedTime = `${time.hours}h:${time.minutes}min:${time.seconds}sec`;
   const formattedDate = format(new Date(createdAt), 'dd.MM.yyyy / hh:mm a');
-  const link = `/result?encdata=${testResult}&email=${encodeURIComponent(encodeBase64(email))}`;
+  const link = `/result?encdata=${testResult}&name=${encodeURIComponent(fullName)}`
 
   const [isExpanded, setExpanded] = useState(false);
 
@@ -39,7 +39,7 @@ export const ResultItem: React.FC<ResultItemProps> = ({ data, number }) => {
       <div className={style.info}>
         <span className={style.number}>{number}</span>
         <Link href={link}>
-          <a className={style.email}>{email}</a>
+          <a className={style.email}>{fullName}</a>
         </Link>
         <span className={style.date}>{formattedDate}</span>
         <span className={style.duration}>{formattedTime}</span>
