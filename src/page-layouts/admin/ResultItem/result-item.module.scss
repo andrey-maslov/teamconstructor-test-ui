@@ -1,0 +1,71 @@
+@import '../../../assets/scss/vars';
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+  font-size: 15px;
+  box-shadow: $box-shadow-sm;
+  background-color: #fff;
+
+  span {
+    display: inline-block;
+  }
+}
+
+.email {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.number {
+  width: 30px;
+  min-width: 20px;
+  font-weight: bold;
+  color: $text;
+}
+
+.duration,
+.date {
+  width: 200px;
+  min-width: 200px;
+}
+
+.showBtn {
+  display: flex;
+  align-items: center;
+  padding: 0 0.6rem;
+  line-height: 37px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: 1px solid #EFF1F4;
+  height: 2.3rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken(#EFF1F4, 10%);
+  }
+}
+
+.content {
+  margin-top: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba($grey, .4);
+}
+
+@media(max-width: 768px) {
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .email {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}

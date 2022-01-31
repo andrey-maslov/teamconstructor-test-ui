@@ -1,26 +1,8 @@
 //variables
 @import '../../assets/scss/vars';
 
-.item {
-  margin-bottom: 20px;
-}
-
-.link {
-  transition: all .2s ease-in-out;
-  padding: 10px;
-  border-bottom: 1px solid rgba($grey, .4);
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  
-  &:hover {
-    box-shadow: $box-shadow-md;
-  }
-  
-  span {
-    display: inline-block;
-  }
+.wrapper {
+  background-color: rgba(54, 169, 224, 0.1);
 }
 
 .tableHeader {
@@ -37,6 +19,11 @@
   }
 }
 
+.item {
+  margin-bottom: 6px;
+  border-radius: 3px;
+}
+
 .email {
   flex-grow: 1;
   flex-shrink: 0;
@@ -49,22 +36,14 @@
   color: $text;
 }
 
-.duration, 
+.duration,
 .date {
   width: 200px;
   min-width: 200px;
-} 
-
-.date {
-  
 }
 
 @media(max-width: 768px) {
-  .link, .tableHeader {
+  .tableHeader {
     flex-wrap: wrap;
-    .email {
-      width: 80%;
-      margin-bottom: 10px;
-    }
   }
 }

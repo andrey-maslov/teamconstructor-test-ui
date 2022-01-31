@@ -22,8 +22,8 @@ import {
 import RobotQuestion from '../../../components/common/robots/robot-question/RobotQuestion'
 import { TEST_THRESHOLD } from '../../../constants/constants'
 import {decodeBase64, encodeDataForURL, isTestPassed} from '../../../helper/helper'
-import allTerms from './terms.json'
-import allDescriptions from './descriptions.json'
+import allTerms from '../../../libs/terms.json'
+import allDescriptions from '../../../libs/descriptions.json'
 
 
 const Result = ({ testResult }) => {
