@@ -1,24 +1,27 @@
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
-import { GrInfo } from "react-icons/gr";
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import { GrInfo } from 'react-icons/gr';
 import {
   baseTestResultType,
   DecodedDataType,
-} from "../../../libs/psychology/build/main/types/types";
-import Questions from "./questions/Questions";
-import style from "./test.module.scss";
-import { TEST_THRESHOLD } from "../../../constants/constants";
+} from '../../../libs/psychology/build/main/types/types';
+import Questions from './questions/Questions';
+import style from './test.module.scss';
+import { TEST_THRESHOLD } from '../../../constants/constants';
 import {
   encodeBase64,
   isTestPassed,
-  scrollToElement, 
-  validateFullName
-} from "../../../helper/helper";
-import {saveTestResult, saveTestResultToFile} from "../../../api/psychologicalTestsAPI";
+  scrollToElement,
+  validateFullName,
+} from '../../../helper/helper';
+import {
+  saveTestResult,
+  saveTestResultToFile,
+} from '../../../api/psychologicalTestsAPI';
 
 const personalInfo = [0, 0, 0];
-const userEmail = "";
+const userEmail = '';
 
 interface IDataState {
   personalInfo: readonly number[] | null;
@@ -27,14 +30,14 @@ interface IDataState {
 
 const Test = () => {
   const router = useRouter();
-  const { t } = useTranslation("test");
+  const { t } = useTranslation('test');
   const [data, setData] = useState<IDataState>({
     personalInfo: null,
     testData: null,
   });
 
   const [start, setStart] = useState(new Date().getTime());
-  const [teammate, setTeammate] = useState("");
+  const [teammate, setTeammate] = useState('');
   const [isNameError, setNameError] = useState(false);
   const [isTestDone, setTestDone] = useState(false);
 
@@ -47,23 +50,23 @@ const Test = () => {
   return (
     <div>
       {isTestDone ? (
-        <h3 style={{ textAlign: "center" }}>{t("test:page.thanx")}</h3>
+        <h3 style={{ textAlign: 'center' }}>{t('test:page.thanx')}</h3>
       ) : (
         <div className="visible">
           <div className={style.info}>
             <GrInfo />
             <div
               dangerouslySetInnerHTML={{
-                __html: t("test:page.test_block_desc"),
+                __html: t('test:page.test_block_desc'),
               }}
             />
           </div>
-          <div className={`${style.name} ${isNameError ? style.error : ""}`}>
+          <div className={`${style.name} ${isNameError ? style.error : ''}`}>
             <input
               type="text"
               name="teammate"
               value={teammate}
-              placeholder={t("test:page.enter_name")}
+              placeholder={t('test:page.enter_name')}
               aria-label="name"
               onChange={(e) => {
                 setNameError(false);
@@ -72,7 +75,7 @@ const Test = () => {
             />
             {isNameError && (
               <div className={style.nameError}>
-                {t("test:errors.name_error")}
+                {t('test:errors.name_error')}
               </div>
             )}
           </div>
@@ -88,11 +91,11 @@ const Test = () => {
 
   function sendAnswers(fullResult: DecodedDataType) {
     const isPassed = isTestPassed(fullResult[1], TEST_THRESHOLD);
-    const isNameValid = validateFullName(teammate)
+    const isNameValid = validateFullName(teammate);
     if (!isNameValid) {
-      setNameError(true)
-      scrollToElement('input[name=teammate]')
-      return
+      setNameError(true);
+      scrollToElement('input[name=teammate]');
+      return;
     }
     if (isPassed) {
       const end = new Date().getTime();
@@ -102,14 +105,14 @@ const Test = () => {
         fullName: teammate,
         testResult: encodeBase64(fullResult),
         duration: end - start,
-        tags: "",
+        tags: null,
       };
       // save result in DB
       saveTestResult(dataToSave)
-          .then(res => {
-            setTestDone(true)
-          })
-          .catch(err => console.error(err))
+        .then((res) => {
+          setTestDone(true);
+        })
+        .catch((err) => console.error(err));
     }
   }
 };
